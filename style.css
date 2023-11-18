@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One&family=Raleway:wght@300&family=Roboto:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+html{
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+img{
+    width: 100%;   
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    width: 100%;
+    height: 70px;
+    position: absolute;
+    z-index: 1; 
+    background-color: transparent; 
+}
+header .logo a {
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0.938);
+    padding: 15px 30px;
+  
+}
+header .logo a span{
+    color: #b6341d;
+}
+header nav ul{
+    display: flex;
+}
+header nav ul li a {
+    margin: 5px 20px;
+    font-size: 18px;
+    color: white;
+    padding: 10px 10px;
+}
+header nav ul li a:hover{
+    color: #b6341d;  
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    background:url("/img/popular-coffee-drinks_1400x.webp");
+    background-image: linear-gradient(to bottom right, rgba(96, 76, 76, 0.6) rgba(96, 76, 76, 0.6)),
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.content h2{
+    font-size: 55px;
+    padding: 5px;
+    color:   rgb(216, 50, 50);
+}
+.content p {
+    font-size: 32px;
+    color: white;
+}
+
+.menu .menu-header
+{background-color: #404040;
+
+}
+.menu {
+    background-color: #47414138;
+    width: 100%;
+}
+.menu .menu-header{
+    background-color: #524b4b;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu-header h3{
+    color: #b6341d;
+    padding: 10px 30px;
+}
+
+.menu-header h4{
+    color: #b6341d;
+    padding: 10px 20px;
+}
+.menu .menu-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 50px 0;
+    flex-wrap: wrap;
+    background-color: #404040;
+}
+
+.menu .menu-content .hot-coffes,
+ .cold-coffes,
+  .nutella-coffes{
+    width: 250px   
+}
+
+.menu .menu-content .hot-coffes .hot-coffes-image img {
+    border-radius: 50%;
+}
+.menu .menu-content .cold-coffes .cold-coffes-image img {
+    border-radius: 50%;
+}
+.menu .menu-content .nutella-coffes .nutella-coffes-image img {
+    border-radius: 50%;
+}
+.menu .menu-content .hot-coffes-body,
+.cold-coffes-body,
+.nutella-coffes-body{
+    text-align:center;
+    margin-top: 10px;
+}
+.menu .menu-content .hot-coffes-body h2,
+.cold-coffes-body h2,
+.nutella-coffes-body h2{
+    color: #b6341d;
+}
+.menu .menu-content .hot-coffes-body label,
+.cold-coffes-body label,
+.nutella-coffes-body label{
+    margin-top :10px;
+    color: white;
+}
+/*shop*/
+.shop{
+    background-color: #404040;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+      gap: 18px;
+}
+.shop-header{
+    background-color: #524b4b;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+.shop-header h3{
+    color: #b6341d;
+    padding: 10px 30px;
+}
+.shop-header h4{
+    color: #b6341d;
+    padding: 10px 20px;
+}
+
+.shop-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #404040;
+    padding: 50px 0;
+    flex-wrap: wrap;
+}
+
+.shop-box .card{
+    width: 280px;
+    margin: 20px;
+}
+
+.shop-box .card-image{
+    width:100%;
+    height: 200px;
+    overflow: hidden;
+
+}
+
+.shop-box .card-image img:hover{
+    transform: scale(1.1);
+    transition: transform .4s ease-in-out;
+}
+
+.shop-box .card-body{
+    padding: 20px;
+    color:  white;
+    border: 3px solid #3B3B3B ;
+}
+
+.shop-box .card-body h3{
+    padding: 10px 0;
+}
+
+.shop-box .card-body i{
+    color: yellow;
+    font-size: 10px;
+    position: relative;
+    bottom: 5px;
+}
+
+.shop-box .card-body .cash{
+    font-size: 22px;
+    margin-left: 90px;
+}
+/*contact*/
+.Contact{
+    display: flex;
+    flex-wrap: wrap;
+    width:100%;
+    border-top: 2px solid #333333;
+
+}
+.Contact .Contact-box{
+    flex:1;
+
+}
+.Contact .Contact-box .Contact-image,
+.Contact .Contact-box .Contact-body{
+    height: 100%;
+}
+.Contact img{
+    width:100%;
+    height: 100%;
+}
+.Contact-image img{
+    opacity: .9;
+}
+.Contact-body{
+    background-color: #404040;
+    height: 100%;
+    border-left: 2px solid #333333;
+}
+.Contact-body form{
+    padding: 50px 40px;
+    box-sizing: border-box;
+}
+.Contact-body h2{
+    color: #b6341d;
+}
+form .form-content{
+    position: relative;
+    margin: 30px 0;
+    border-bottom: 2px solid lightgrey;
+}
+form .form-content input{
+    width:100%;
+    height: 40px;
+    padding: 0 5px;
+    font-size: 17px;
+    border: none;
+    background: none;
+    outline: none;
+    color: white;
+
+}
+form .form-content label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: grey;
+    transform: translateY(-50%);
+    font-size: 17px;
+    transition: .5s;
+    pointer-events: none;
+}
+
+form .form-content span::before{
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width:0%;
+    height: 2px;
+    background-color: #b6341d;
+    transform: .4s;
+
+}
+form .form-content input:focus~label,
+form .form-content input:valid~label{
+    top: -5px;
+    color: #b6341d;
+}
+form .form-content input:focus~span::before,
+form .form-content input:valid~span::before{
+    width:100%;
+}
+
+.Contact-body form button{
+    padding: 10px 20px;
+    font-size: 17px;
+    border: none;
+    background-color: #b6341d;
+    color: white;
+    border: 5px;
+    cursor: pointer;
+    transition: all .4s ease-in;
+}
+.Contact-body form button:hover{
+    background-color: #b6341d;
+}
+
+
+/*footer*/
+.footer{
+    background-color: #404040;
+    border-top: 2px solid #333333 ;
+}
+.footer .footer-box {
+    padding: 30px; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer .footer-box .social-media a i{
+    color: white;
+    background-color: #333333;
+    border-radius: 50%;
+    font-size: 17px;
+    padding: 10px;
+    margin: 5px;
+}
+.footer .footer-box .social-media a i:hover{
+    opacity: .7;
+    transition: .5s all ease-in-out;
+}
+.footer .footer-box .copyright{
+    color:  white;
+    font-size: 20px;
+}
+.footer .footer-box .brand{
+    color: white;
+    font-size: 20px;
+}
+.footer .footer-box .brand span{
+    color: #b6341d;
+}
+/*reponsive*/
+@media only screen and (max-width: 600px) {
+
+    header {
+        padding: 20px;
+    }
+
+    header .logo a {
+        font-size: 24px;
+        padding: 10px 20px;
+    }
+
+    header nav ul li a {
+        margin: 5px 10px;
+        font-size: 16px;
+        padding: 8px 5px;
+    }
+
+    .content h2 {
+        font-size: 40px;
+    }
+
+    .content p {
+        font-size: 24px;
+    }
+
+    .menu .menu-content .hot-coffes, .menu .menu-content .cold-coffes, .menu .menu-content .nutella-coffes {
+        width: 100%;
+    }
+
+    .shop{
+        grid-template-columns: 1fr;
+    }
+
+    .shop-box {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    /* .shop-box .card {
+        width: 80%;
+    } */
+
+    .Contact-body form {
+        padding: 20px 10px;
+    }
+
+    .Contact-body form button {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+
+    .footer .footer-box {
+        padding: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer .footer-box .social-media a i {
+        font-size: 14px;
+        padding: 8px;
+        margin: 3px;
+    }
+
+    .footer .footer-box .copyright,
+    .footer .footer-box .brand {
+        font-size: 16px;
+    }
+}
